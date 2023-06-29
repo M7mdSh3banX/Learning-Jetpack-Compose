@@ -33,7 +33,7 @@ fun MyApp() {
             },
             floatingActionButton = {
                 FloatingActionButton(onClick = { /*TODO*/ }) {
-                    Icon(Icons.Rounded.Add, contentDescription = "Add")
+                    Icon(imageVector = Icons.Rounded.Add, contentDescription = "Add")
                 }
             }
         ) {
