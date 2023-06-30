@@ -1,6 +1,8 @@
 package com.shaban.jetpackcomposeapp1.screens
 
+import android.util.Log
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -47,6 +49,9 @@ fun HomeScreen(modifier: Modifier) {
         )
         Text(
             modifier = Modifier
+                .clickable {
+                    Log.e("CLICKABLE", "Hello I'm Clickable")
+                }
                 .background(color = Color.Red)
                 .width(200.dp)
                 .height(100.dp)
