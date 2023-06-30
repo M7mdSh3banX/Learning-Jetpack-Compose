@@ -2,11 +2,12 @@ package com.shaban.jetpackcomposeapp1.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
@@ -26,22 +27,28 @@ fun HomeScreen(modifier: Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceEvenly
     ) {
+        Box(modifier = Modifier.padding(16.dp)) {
+            Text(
+                modifier = Modifier
+                    .background(color = Color.Gray)
+                    .fillMaxWidth()
+                    .padding(8.dp),
+                text = "Hello Shaban",
+                fontSize = 20.sp
+            )
+        }
         Text(
             modifier = Modifier
                 .background(color = Color.Gray)
                 .width(200.dp)
-                .height(100.dp),
+                .height(100.dp)
+                .padding(16.dp),
             text = "Hello Mohamed",
             fontSize = 24.sp
         )
-        Text(
-            modifier = Modifier
-                .background(color = Color.Gray)
-                .size(width = 96.dp, height = 128.dp),
-            text = "Hello Shaban",
-            fontSize = 20.sp
-        )
-        Button(onClick = { /*TODO*/ }) {
+        Button(
+            modifier = Modifier.fillMaxWidth(),
+            onClick = { /*TODO*/ }) {
             Text(text = "Click Me")
         }
     }
