@@ -21,12 +21,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.shaban.jetpackcomposeapp1.modifiers.blueLight
 
 @Composable
 fun HomeScreen(modifier: Modifier) {
     val textShadowModifier = Modifier
         .shadow(elevation = 12.dp, spotColor = Color.Red)
-        .background(color = Color.LightGray)
+        .background(color = Color.Red)
         .fillMaxWidth()
         .padding(8.dp)
 
@@ -43,7 +44,8 @@ fun HomeScreen(modifier: Modifier) {
             )
         }
         Text(
-            modifier = textShadowModifier,
+            modifier = Modifier
+                .blueLight(),
             text = "Hello Shaban",
             fontSize = 20.sp
         )
