@@ -14,6 +14,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -21,6 +22,11 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun HomeScreen(modifier: Modifier) {
+    val textShadowModifier = Modifier
+        .shadow(elevation = 12.dp, spotColor = Color.Red)
+        .background(color = Color.LightGray)
+        .fillMaxWidth()
+        .padding(8.dp)
 
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -29,14 +35,16 @@ fun HomeScreen(modifier: Modifier) {
     ) {
         Box(modifier = Modifier.padding(16.dp)) {
             Text(
-                modifier = Modifier
-                    .background(color = Color.Gray)
-                    .fillMaxWidth()
-                    .padding(8.dp),
+                modifier = textShadowModifier,
                 text = "Hello Shaban",
                 fontSize = 20.sp
             )
         }
+        Text(
+            modifier = textShadowModifier,
+            text = "Hello Shaban",
+            fontSize = 20.sp
+        )
         Text(
             modifier = Modifier
                 .background(color = Color.Red)
