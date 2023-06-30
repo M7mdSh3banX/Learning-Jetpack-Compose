@@ -25,9 +25,7 @@ fun MyApp() {
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = {
-                        Text(text = "My Application")
-                    },
+                    title = { Text(text = "My Application") },
                     // colors = TopAppBarDefaults.mediumTopAppBarColors(Color.Green)
                 )
             },
