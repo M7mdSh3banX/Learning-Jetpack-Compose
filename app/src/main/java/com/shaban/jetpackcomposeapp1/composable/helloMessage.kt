@@ -9,7 +9,7 @@ import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
 fun HelloMessage(name: String, modifier: Modifier) {
-    Text(text = "Hello, $name", modifier = modifier, style = MaterialTheme.typography.displaySmall)
+    Text(text = "Hello, $name", modifier = modifier, style = MaterialTheme.typography.headlineSmall)
 }
 
 @Composable
