@@ -39,10 +39,13 @@ fun HomeScreen(modifier: Modifier) {
         }
         Text(
             modifier = Modifier
-                .background(color = Color.Gray)
+                .background(color = Color.Red)
                 .width(200.dp)
                 .height(100.dp)
-                .padding(16.dp),
+                .padding(16.dp)
+                .background(color = Color.Green)
+                .padding(16.dp)
+                .background(color = Color.Yellow),
             text = "Hello Mohamed",
             fontSize = 24.sp
         )
