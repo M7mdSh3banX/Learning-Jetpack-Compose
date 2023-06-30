@@ -35,10 +35,7 @@ fun MyApp() {
                 }
             }
         ) {
-            HomeScreen(
-                team = listOf("Mohamed", "Shaban", "Ahmed", "Hussein", "Ahmed"),
-                modifier = Modifier.padding(it)
-            )
+            HomeScreen(modifier = Modifier.padding(it))
         }
     }
 }
