@@ -43,3 +43,7 @@ _sandbox
 
 # Android Studio captures folder
 captures/
+
+misc.xml
+gradle.xml
+vcs.xml
