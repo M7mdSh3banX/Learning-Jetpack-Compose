@@ -1,6 +1,7 @@
 package com.shaban.jetpackcomposeapp1.screens
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -21,11 +22,16 @@ fun HomeScreen(modifier: Modifier) {
         HelloMessage(name = "Ahmed", modifier = modifier)
     }*/
 
-    Row(
+    /*Row(
         modifier = Modifier.fillMaxSize(),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceAround
     ) {
+        HelloMessage(name = "Mohamed", modifier = modifier)
+        HelloMessage(name = "Shaban", modifier = modifier)
+    }*/
+
+    Box() {
         HelloMessage(name = "Mohamed", modifier = modifier)
         HelloMessage(name = "Shaban", modifier = modifier)
     }
