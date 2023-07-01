@@ -51,7 +51,7 @@ fun HomeScreen(modifier: Modifier) {
         Image(
             painter =
             painterResource(id = R.drawable.clarence),
-            contentDescription = null,
+            contentDescription = "Clarence is a popular cartoon for children",
             modifier = Modifier
                 .size(256.dp)
                 .clip(shape = RoundedCornerShape(96.dp))
